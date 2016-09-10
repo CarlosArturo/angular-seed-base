@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="contactsMgr">
+<head>
+  <meta charset="utf-8">
+  <title>Contacts Manager</title>
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+</head>
+<body>
+ 
+<cn-navbar></cn-navbar>
+ 
+<div class="container">
+ 
+    <ng-view></ng-view>
+ 
+</div>
+ 
+  <script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
+  <script type="text/javascript" src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="bower_components/angular/angular.min.js"></script>
+  <script type="text/javascript" src="bower_components/angular-route/angular-route.min.js"></script>
+  <script type="text/javascript" src="app.js"></script>
+  <script type="text/javascript" src="services/contacts.js"></script> 
+  <script type="text/javascript" src="directives/cn-contact.js"></script>
+  <script type="text/javascript" src="navbar/cn-navbar-directive.js"></script>
+  <script type="text/javascript" src="navbar/nav-bar-service.js"></script>
+  <script type="text/javascript" src="home/home-ctrl.js"></script>
+  <script type="text/javascript" src="add-contact/add-contact-ctrl.js"></script>
+  <script type="text/javascript" src="show-contact/show-contact-ctrl.js"></script>
+</body>
+</html>

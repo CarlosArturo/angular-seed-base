@@ -1,0 +1,12 @@
+[
+	{
+		"id": 1,
+		"name": "John Doe",
+		"phone": "555-4521"
+	},
+	{
+		"id": 2,
+		"name": "Scarlett Johansson",
+		"phone": "555-5487"
+	}
+]

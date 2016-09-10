@@ -1,0 +1,25 @@
+<nav class="navbar navbar-default" role="navigation">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#nav-toggle">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#/">Contacts Manager</a>
+    </div>
+ 
+    <div class="collapse navbar-collapse" id="nav-toggle">
+        <ul class="nav navbar-nav">
+            <li ng-class="{active: navBarCtrl.navBarService.getActiveItem() === 'browse'}">
+                <a ng-click="navBarCtrl.navBarService.setActiveItem('browse')" href="#/">Browse</a>
+            </li>
+            <li ng-class="{active: navBarCtrl.navBarService.getActiveItem() === 'add'}">
+                <a ng-click="navBarCtrl.navBarService.setActiveItem('add')" href="#/add-contact">Add Contact</a>
+            </li>
+        </ul>
+        <form class="navbar-form navbar-right" role="search">
+            <input type="text" class="form-control" placeholder="Search">
+        </form>
+    </div>
+</nav>
