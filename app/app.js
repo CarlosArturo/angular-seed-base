@@ -2,7 +2,8 @@
 
 // Declare app level module which depends on views, and components
 angular.module('contactsMgr', [
-  'ngRoute'
+  'ngRoute',
+  'ngCookies'
 ])
 
 .config(['$locationProvider', '$routeProvider', function($locationProvider, $routeProvider) {

@@ -8,10 +8,11 @@
 		return {
 			restrict: 'E',
 			templateUrl: 'navbar/navbar.html',
-			controller: ['navBarService', function(navBarService) {
-				this.navBarService = navBarService;
-			}],
-			controllerAs: 'navBarCtrl'
+			controllerAs: 'navBarCtrl',
+			controller: ['$location', 'user', function($location, user) {
+				this.$location = $location;
+				this.user = user;
+			}]
 		};
 	});
 
